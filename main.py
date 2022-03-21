@@ -21,8 +21,8 @@ logger.addHandler(file_handler)
 
 if __name__ == '__main__':
 
-    binance = BinanceFuturesClient("57f5560b4991ecdeed954ba8b9a8140231a73846b4775c1d8ba97710e7da9c52",
-                                   "fb3dc665d6bbb9b6773bf4e65d508842774ca08e15bba7f3bfc4c439e0687762", True)
+    binance = BinanceFuturesClient("public_key",
+                                   "secret_key", True)
 
     root = Root(binance)
     root.mainloop()
